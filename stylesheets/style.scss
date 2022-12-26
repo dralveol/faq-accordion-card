@@ -1,0 +1,87 @@
+@import "reset";
+@import "colors";
+
+body {
+  background: linear-gradient(to bottom, $Soft-violet, $Soft-blue);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 12px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+  margin: 12rem 2rem;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  background-color: white;
+  border-radius: 23px;
+  position: relative;
+}
+section {
+  margin: 0 2rem;
+}
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: $Very-dark-desaturated-blue;
+  margin: 11rem 0 3rem;
+}
+details {
+  padding: 1.5rem;
+  border-bottom: 2px solid $Light-grayish-blue;
+}
+summary {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $Very-dark-grayish-blue;
+  cursor: pointer;
+}
+details > p {
+  font-size: 1rem;
+  color: $Dark-grayish-blue;
+  font-weight: 400;
+}
+
+
+summary > img {
+  display: inline-block;
+  float: right;
+  padding: 5px 0;
+  transition: transform .4s ease-out;
+}
+
+details[open] > summary {
+  font-weight: 700;
+  color: $Very-dark-desaturated-blue;
+}
+
+details[open] > summary > img {
+  transform: rotate(180deg);
+}
+
+.illustration {
+  display: block;
+  width: 75%;
+  height: 33%;
+  position: absolute;
+}
+
+.woman {
+  top: -20%;
+  left: 12%;
+}
+
+.bg-pattern {
+  top: -17%;
+  left: 12%;
+}
+
+.box {
+  width: 18%;
+  height: 14%;
+  z-index: 1;
+  top: -6%;
+  left: 17%;
+}
