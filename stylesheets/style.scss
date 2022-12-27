@@ -49,7 +49,7 @@ summary > img {
   display: inline-block;
   float: right;
   padding: 5px 0;
-  transition: transform .4s ease-out;
+  transition: transform .5s ease-out;
 }
 
 details[open] > summary {
@@ -84,4 +84,37 @@ details[open] > summary > img {
   z-index: 1;
   top: -6%;
   left: 17%;
+}
+
+@media screen and (min-width: 70rem) {
+  main {
+    display: flex;
+    flex-direction: row;
+    margin: 10% 17%;
+    overflow: hidden;
+  }
+  header {
+    width: 50%;
+  }
+  h1 {
+    margin: 3rem 0;
+  }
+  .illustration {
+    width: 50%;
+    height: 75%;
+  }
+  .woman {
+    top: 12%;
+    left: -5%;
+  }
+  .bg-pattern {
+    top: 17%;
+    left: -5%;
+  }
+  .box {
+    width: 20%;
+    height: 28%;
+    top: 47%;
+    left: -7%;
+  }
 }
