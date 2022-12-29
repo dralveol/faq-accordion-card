@@ -157,6 +157,9 @@ details[open] > summary > img {
   header {
     width: 50%;
   }
+  section {
+    width: 50%;
+  }
   h1 {
     margin: 3rem 0;
   }
